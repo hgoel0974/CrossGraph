@@ -58,7 +58,7 @@ namespace CrossGraph
 			if(Indices == null)
 			{
 				Indices = new ushort[Data.Length];
-				int i = 0;
+				ushort i = 0;
 				while(i < Data.Length)
 				{
 					Indices[i] = i++;	
