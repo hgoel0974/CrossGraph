@@ -90,6 +90,7 @@ namespace CrossGraph
             GL.NormalPointer(NormalPointerType.Float, Vertex.Stride, new IntPtr(Marshal.SizeOf(default(Vector3))  ));
             GL.TexCoordPointer(2, TexCoordPointerType.Float, Vertex.Stride, new IntPtr(2 * Marshal.SizeOf(default(Vector3)) ));
 
+
             if (Indices != null) GL.DrawElements((BeginMode)Enum.Parse(typeof(BeginMode), type.ToString(), true), count, DrawElementsType.UnsignedShort, Indices);
             else GL.DrawArrays((BeginMode)Enum.Parse(typeof(BeginMode), type.ToString(), true), first, count);
 #elif PSM

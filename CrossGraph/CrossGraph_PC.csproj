@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core.cs" />
     <Compile Include="Texture.cs" />
     <Compile Include="VertexBuffer.cs" />
     <Compile Include="MathHelper.cs" />
